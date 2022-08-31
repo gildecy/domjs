@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-DOM-JS</title>
+    <style>
+        #titulo{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+            color: rgb(15, 15, 15);
+        }
+        .produto{
+            font-family:monospace;
+            color:darkblue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="titulo">PAGINA INICIAL</p>
+    <ul>
+        <li class="produto">CIDADES</li>
+        <li class="produto">FORTALEZA</li>
+        <li class="produto">SAO LUIS</li>
+        </ul>
+    <script>
+       function domJs(alterandolista){
+        document.getElementById('titulo').innerHTML = "texto alterado usando javascript"
+
+        document.getElementsByClassName('produto')[0].innerHTML = 'ACAILANDIA'
+
+        document.getElementsByClassName('produto')[1].innerHTML = 'ITINGA'
+
+        document.getElementsByClassName('produto')[2].innerHTML='IMPERATRIZ'
+       }
+       domJs()
+ 
+    </script>
+</body>
+
+</html>
